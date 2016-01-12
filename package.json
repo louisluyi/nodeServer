@@ -1,0 +1,16 @@
+{
+  "name": "node-server",
+  "version": "0.0.1",
+  "description": "node-server for virtual data via ajax",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "ajax"
+  ],
+  "author": "luyi",
+  "license": "MIT"
+}
