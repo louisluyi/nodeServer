@@ -1,16 +1,12 @@
 'use strict';
-var Server = require('../config/Server');
+import * as Server from '../config/Server';
 var http = require('http');
-class BaseController{
-
-    basePath = '';
-    successStatus = 200;
-    notFoundStatus = 404;
-    errorStatus = 500;
+export default class BaseController{
 
     constructor(option){
         if(!option) return;
         this.basePath = option.basePath ? option.basePath + '' : '';
+        this.port = Server.port;
     }
 }
 
@@ -19,5 +15,3 @@ BaseController.listen = function(port){
         
     }).listen(Server.port);
 }
-
-module.exports = BaseController;
