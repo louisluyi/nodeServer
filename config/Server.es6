@@ -9,3 +9,4 @@ export const Server = {
     notFoundStatus:404,
     errorStatus:500
 };
+console.log(Server);

@@ -1,17 +1,19 @@
 'use strict';
-import * as Server from '../config/Server';
-var http = require('http');
+import {port} from '../config/Server';
+import http from 'http';
+
+var controllers = [];
 export default class BaseController{
 
     constructor(option){
         if(!option) return;
         this.basePath = option.basePath ? option.basePath + '' : '';
-        this.port = Server.port;
+        this.port = port;
     }
 }
-
-BaseController.listen = function(port){
+console.log(port);
+BaseController.begin = function(){
     http.createServer(function(request, response){
-        
-    }).listen(Server.port);
+        console.log(request);
+    }).listen(port);
 }
