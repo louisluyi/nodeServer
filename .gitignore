@@ -1,5 +1,2 @@
 .idea
 node_modules
-server_config
-*.js
-*.js.map

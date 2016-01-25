@@ -3,10 +3,9 @@
  */
 'use strict';
 
-export const Server = {
+module.exports = {
     port:10086,
     successStatus:200,
     notFoundStatus:404,
     errorStatus:500
 };
-console.log(Server);
